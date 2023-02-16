@@ -36,7 +36,7 @@ const App = () => {
             }
 
             {
-                (Object.keys(image).length !== 0 && !loader) && <PhotoFrame url={image.url} title={image.title}/>
+                (Object.keys(image).length !== 0 && loader) && <PhotoFrame url={image.url} title={image.title}/>
             }
         </>
     )
