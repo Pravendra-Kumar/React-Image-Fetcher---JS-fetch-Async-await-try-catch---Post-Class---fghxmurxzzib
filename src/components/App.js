@@ -29,14 +29,14 @@ const App = () => {
 
     return(
         <>
-            Id number  <input type="number" onBlur={updateInput}/>
+            Id number  <input type="number" onChange={updateInput}/>
 
             {
                 (loader) && <Loader />
             }
 
             {
-                (Object.keys(image).length !== 0 && loader) && <PhotoFrame url={image.url} title={image.title}/>
+                (Object.keys(image).length !== 0 && !loader) && <PhotoFrame url={image.url} title={image.title}/>
             }
         </>
     )
